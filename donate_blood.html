@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <i class='bx bx-x sidebarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="user_index.php">Home</a></li>
+                    <li><a href="">Donate Blood</a></li>
+                    <li><a href="user_receive_blood.php">Receive Blood</a></li>
+                    <li><a href="user_cards.php">Blood Event</a></li>
+                </ul>
+            </div>
+            <div class="login-signin">
+                <a href="login_form.php">
+                    <button type="submit" class="lsbtn">Login/Signup</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="donate">
+        <h2>Fill below details to donate blood</h2>
+        <form class="donate_form">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your address" required>
+            <input type="tel" pattern="[0-9]{10}" placeholder="Enter your number" name="mobileno" required>
+            Select Your Blood Type <br/><br>
+            <select id="">
+                <option value="">O+</option>
+                <option value="">A+</option>
+                <option value="">B+</option>
+                <option value="">AB+</option>
+                <option value="">O-</option>
+                <option value="">A-</option>
+                <option value="">B-</option>
+                <option value="">AB-</option>
+            </select>
+            Select the date on which you come for donate blood <br><br>
+            <input type="date">
+            <input type="submit" value="Submit" class="dbtn">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
